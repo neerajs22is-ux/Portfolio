@@ -46,7 +46,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          Neeraj S
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
@@ -62,8 +62,10 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-screen">
         <div className="loading-marquee">
           <Marquee>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
-            <span> A Creative Developer</span> <span>A Creative Designer</span>
+            <span> Growth Ops & Web Developer</span>
+            <span> Webflow · Framer · Ads</span>
+            <span> Growth Ops & Web Developer</span>
+            <span> Webflow · Framer · Ads</span>
           </Marquee>
         </div>
         <div
@@ -102,13 +104,15 @@ export const setProgress = (setLoading: (value: number) => void) => {
       setLoading(percent);
     } else {
       clearInterval(interval);
+      // crawl slowly toward 91% while the 3D assets actually load
       interval = setInterval(() => {
-        percent = percent + Math.round(Math.random());
-        setLoading(percent);
-        if (percent > 91) {
+        percent = percent + Math.round(Math.random() * 2);
+        if (percent >= 91) {
+          percent = 91;
           clearInterval(interval);
         }
-      }, 2000);
+        setLoading(percent);
+      }, 150);
     }
   }, 100);
 
