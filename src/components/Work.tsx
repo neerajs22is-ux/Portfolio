@@ -55,6 +55,9 @@ const projects = [
 
 const Work = () => {
   useGSAP(() => {
+  // Mobile: native horizontal swipe via CSS; GSAP pin only on desktop
+  if (window.innerWidth <= 1024) return;
+
   let translateX: number = 0;
 
   function setTranslateX() {

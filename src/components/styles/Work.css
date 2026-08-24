@@ -204,7 +204,18 @@
   .work-container {
     align-content: normal;
   }
+  .work-section {
+    height: auto;
+  }
   .work-flex {
     height: auto;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    margin-left: 0;
+    padding-right: 0;
+  }
+  .work-box {
+    scroll-snap-align: start;
   }
 }

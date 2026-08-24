@@ -199,12 +199,9 @@
 
 .landing-info {
   position: absolute;
-  right: 50%;
-  transform: translateX(50%);
+  left: 0;
   bottom: 40px;
-  top: inherit;
   z-index: 9;
-  padding: 0;
 }
 .landing-info h3 {
   font-size: 22px;
