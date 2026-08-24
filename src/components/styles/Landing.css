@@ -19,8 +19,8 @@
   position: fixed;
   width: 300px;
   height: 300px;
-  background-color: #fb8dff;
-  box-shadow: inset -50px 40px 50px rgba(84, 0, 255, 0.6);
+  background-color: #00adb5;
+  box-shadow: inset -50px 40px 50px rgba(0, 100, 105, 0.6);
   filter: blur(60px);
   border-radius: 50%;
   animation: loadingCircle 5s linear infinite;
@@ -58,8 +58,8 @@
   display: none;
   width: 300px;
   height: 300px;
-  background-color: #fb8dff;
-  box-shadow: inset -50px 40px 50px rgba(84, 0, 255, 0.6);
+  background-color: #00adb5;
+  box-shadow: inset -50px 40px 50px rgba(0, 100, 105, 0.6);
   filter: blur(50px);
   border-radius: 50%;
   animation: loadingCircle2 5s linear infinite;
@@ -87,9 +87,9 @@
   width: 400px;
   height: 400px;
   z-index: 1;
-  background-color: #f59bf8;
+  background-color: #12bfc7;
   transform: translate(-50%, 36%) scaleX(1.4);
-  box-shadow: inset 66px 35px 85px 0px rgba(85, 0, 255, 0.65);
+  box-shadow: inset 66px 35px 85px 0px rgba(0, 100, 105, 0.65);
   filter: blur(50px);
   border-radius: 50%;
   top: 50%;
@@ -183,14 +183,14 @@
   font-size: 15px;
   letter-spacing: 1.5px;
   font-weight: 500;
-  color: #eae5ec;
+  color: #eeeeee;
 }
 .landing-stack {
   margin: 4px 0 0;
   font-size: 13px;
   letter-spacing: 0.5px;
   font-weight: 300;
-  color: #9c9a9e;
+  color: #a7b0ba;
 }
 
 /* .landing-intro h1 span {
@@ -219,7 +219,7 @@
   line-height: 1.15;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #c481ff;
+  color: #00adb5;
   height: 2.3em; /* exactly one slot — fits the two-line word */
   overflow: hidden;
 }
