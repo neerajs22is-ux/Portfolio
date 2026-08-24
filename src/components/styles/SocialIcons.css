@@ -19,10 +19,10 @@
 }
 .social-icons:hover {
   transition: 0.3s;
-  color: #00adb5;
+  color: var(--backgroundColor);
 }
 .social-icons a:hover {
-  color: #00adb5;
+  color: var(--backgroundColor);
   /* transform: scale(1.2); */
 }
 .social-icons span {
@@ -56,7 +56,7 @@
   font-size: 15px;
   line-height: 15px;
   font-weight: 600;
-  color: #6b7480;
+  color: #8b939d;
   cursor: pointer;
   transition: 0.5s;
   transform-origin: left bottom;

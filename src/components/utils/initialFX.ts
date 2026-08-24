@@ -25,7 +25,7 @@ export function initialFX() {
   }
 
   gsap.to("body", {
-    backgroundColor: "#EEEEEE",
+    backgroundColor: "#222831",
     duration: 0.5,
     delay: 1,
   });
