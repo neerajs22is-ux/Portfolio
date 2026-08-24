@@ -29,6 +29,8 @@ const MainContainer = ({ children }: PropsWithChildren) => {
 
   return (
     <div className="container-main">
+      <div className="bg-orb bg-orb-1" aria-hidden="true"></div>
+      <div className="bg-orb bg-orb-2" aria-hidden="true"></div>
       <Cursor />
       <Navbar />
       <SocialIcons />
