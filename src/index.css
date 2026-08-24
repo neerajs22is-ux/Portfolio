@@ -59,11 +59,26 @@ body {
   margin: 0;
   height: auto;
   background-color: #222831;
+  background-image:
+    radial-gradient(ellipse 90% 60% at 15% -5%, rgba(0, 173, 181, 0.12), transparent 60%),
+    radial-gradient(ellipse 80% 55% at 88% 103%, rgba(0, 173, 181, 0.09), transparent 55%),
+    linear-gradient(180deg, #272e38 0%, #222831 45%, #1c2129 100%);
+  background-attachment: fixed;
   flex-grow: 1;
   --cWidth: calc(100% - 30px);
   --cMaxWidth: 1920px;
   max-width: 100vw;
   overflow-x: hidden;
+}
+/* film-grain overlay — sits above the background, below interactive content */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 .main-body {
   max-width: 100vw;
