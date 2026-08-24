@@ -17,7 +17,7 @@ export const decryptFile = async (
   password: string
 ): Promise<ArrayBuffer> => {
   // reuse the fetch kicked off at app boot if it targets the same file
-  const response = modelFetch ?? (await fetch(url));
+  const response = await (modelFetch ?? fetch(url));
   const encryptedData = await response.arrayBuffer();
   const iv = new Uint8Array(encryptedData.slice(0, 16));
   const data = encryptedData.slice(16);
