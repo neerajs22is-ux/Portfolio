@@ -21,16 +21,6 @@ const setLighting = (scene: THREE.Scene) => {
   new RGBELoader()
     .setPath(`${import.meta.env.BASE_URL}models/`)
     .load("char_enviorment.hdr", function (texture) {
-      // shift the HDR reflections toward a cool blue-teal hue
-      const d = texture.image.data;
-      if (d) {
-        for (let i = 0; i < d.length; i += 4) {
-          d[i] *= 0.6;
-          d[i + 1] *= 0.85;
-          d[i + 2] *= 1.25;
-        }
-        texture.needsUpdate = true;
-      }
       texture.mapping = THREE.EquirectangularReflectionMapping;
       scene.environment = texture;
       scene.environmentIntensity = 0;
