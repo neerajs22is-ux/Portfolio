@@ -26,7 +26,7 @@
 .header ul li {
   margin-left: 0px;
   letter-spacing: 1px;
-  color: #ccc;
+  color: #5b6670;
   font-weight: 600;
   cursor: pointer;
 }
@@ -55,7 +55,7 @@
     font-size: 14px;
   }
   .header ul li {
-    color: #eeeeee;
+    color: #222831;
   }
   .navbar-title {
     font-size: 16px;

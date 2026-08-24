@@ -40,9 +40,9 @@ a.contact-social {
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 500;
-  color: #eeeeee;
-  background-color: rgba(255, 255, 255, 0.08);
-  border: 1px solid #ffffff40;
+  color: #222831;
+  background-color: rgba(34, 40, 49, 0.07);
+  border: 1px solid #393e46;
   border-radius: 30px;
   transition: 0.3s;
 }
