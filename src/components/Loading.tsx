@@ -104,11 +104,11 @@ export const setProgress = (setLoading: (value: number) => void) => {
       setLoading(percent);
     } else {
       clearInterval(interval);
-      // crawl slowly toward 91% while the 3D assets actually load
+      // crawl toward 70% while the 3D assets actually load
       interval = setInterval(() => {
         percent = percent + Math.round(Math.random() * 2);
-        if (percent >= 91) {
-          percent = 91;
+        if (percent >= 70) {
+          percent = 70;
           clearInterval(interval);
         }
         setLoading(percent);

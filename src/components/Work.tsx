@@ -6,47 +6,49 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(useGSAP);
 
+const base = import.meta.env.BASE_URL;
+
 const projects = [
   {
     name: "Wope",
     category: "Web Development · Framer",
     desc: "Designed and shipped Wope's production marketing site in Framer, owning the full pipeline from Figma handoff to live launch.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
   {
     name: "Anuva Wealth",
     category: "Web Development · Webflow",
     desc: "Built and launched Anuva Wealth's site in Webflow, working directly with stakeholders through revisions to deployment.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
   {
     name: "Givingly",
     category: "Web Development · Webflow/Framer",
     desc: "Took Givingly from Figma concept to a live, responsive site, handling build, interactions, and launch end-to-end.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
   {
     name: "Moureya Concepts",
     category: "Web Development · Framer",
     desc: "Designed and delivered Moureya Concepts' production site, owning client revisions and the full path to deployment.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
   {
     name: "CB Moureya",
     category: "Performance Marketing",
     desc: "Planned and executed Meta & Google ad campaigns with end-to-end influencer partnerships for a real estate brand.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
   {
     name: "Thunder Hospitality",
     category: "Social & Campaign Management",
     desc: "Managed social media and paid campaigns across Thunder Hospitality's venue portfolio, including Mithai Mahal, Skyroot, Tof, 404.",
-    image: "/images/placeholder.webp",
+    image: `${base}images/placeholder.webp",
     link: "#",
   },
 ];

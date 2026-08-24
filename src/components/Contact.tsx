@@ -15,7 +15,7 @@ const Contact = () => {
               </a>
             </p>
             <a
-              href="/resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume.pdf`}
               download="Neeraj-S-Resume.pdf"
               className="resume-download"
               data-cursor="disable"
